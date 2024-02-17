@@ -1,0 +1,129 @@
+/************************************************/
+/*      María López López                      */
+body{
+    background-color: slategray;
+    color: aliceblue;
+}
+
+/*Haciendo que las captions tengan un background difuso para que se vean mejor*/
+#caption1, #caption2, #caption3{background-color: rgba(0,0,0,0.5);
+                                padding:10px;
+                                color: #fff;}
+
+/*Un poco de padding para los títulos de secciones*/
+
+h2.text-center{padding: 30px;}
+
+/*Haciendo que el vídeo se centre bien dentro de collapse*/
+
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.accordion-body video{width: 700px;}
+
+/*ELEMENTOS DENTRO DEL FLEX SE CENTREN*/
+.p-2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/*Estandarizando el tamaño de los títulos dentro de la sección 2*/
+.section-2-title{width: 120px;}
+
+/*Texto de la sección 4*/
+.section-4-text{
+    width: 500px;
+    font-size: larger;
+}
+/*Texto de la sección 5*/
+.section-5-text{
+    width:500px;
+    font-size:larger;
+}
+
+/*Texto de la sección 6*/
+.section-6-text{
+    width:500px;
+    font-size: larger;
+}
+
+
+/*Hago los titulos de las cartas negro para que se puedan ver bien*/
+.card-title{
+    color:black;
+}
+
+/*Snippets de íconos de redes sociales un poco modificados*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+    padding-right: 33px;
+    padding-left:20px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding-left: 22px;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+  /*Media Query para teléfonos pequeños */
+@media only screen and (max-width: 700px) {
+    img {
+        width: 400px;
+    }
+    #accordion-video {
+        width: 400px;
+    }
+
+    .section-4-text{
+        width: 400px;
+    }
+    .section-5-text{
+        width: 400px;
+    }
+    .section-6-text{
+        width: 400px;
+    }
+}
