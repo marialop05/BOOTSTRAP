@@ -325,7 +325,37 @@
                 <p>Phone number: +34 675 764 234</p>
                 <p>E-mail: cadizcity@info.com</p>
             </div>
-
+             <form id="formulario-contacto" onsubmit="return validarFormulario()">
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección">
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" id="sexo" name="sexo">
+                        <option value="">Seleccionar sexo</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terminos" name="terminos">
+                    <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
             <!--Redes sociales con font-awesome y tooltips-->
             <div class="p-2 bg-secondary">
                 <h4>Social Media</h4>
